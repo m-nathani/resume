@@ -63,16 +63,19 @@ p {
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .sidebar-wrapper {
     background: #4B6A78;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     width: 280px;
     height: 100%;
     min-height: 800px;
     color: #fff;
+    flex: 2;
 }
 
 .sidebar-wrapper a {
@@ -87,7 +90,7 @@ p {
 }
 
 .sidebar-wrapper .name {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
@@ -205,8 +208,9 @@ p {
 .main-wrapper {
     background: #fff;
     padding: 30px;
-    padding-right: 300px;
+    /* padding-right: 300px; */
     /* padding-top: 60px; */
+    flex: 4.5;
 }
 
 .main-wrapper .section-title {
@@ -294,6 +298,8 @@ p {
 .skillset .item {
     margin-bottom: 15px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 .skillset .level-title {
@@ -381,16 +387,17 @@ p {
 }
 
 .skills-name {
-    float: left;
-    width: 70%;
+    /* float: left;
+    width: 70%; */
     padding: 5px;
     font-weight: 700;
     font-size: 14px;
+    flex: auto;
 }
 
 .skills-rating {
-    float: left;
-    width: 30%;
+    /* float: left;
+    width: 30%; */
     padding: 5px;
     font-size: 1.2rem;
 }
@@ -398,12 +405,14 @@ p {
 .skill-tool-wrapper {
     display: inline-block;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .skills-section {
     width: 50%;
-    float: left;
-    padding: 0 15px;
+    padding-right: 3%;
+    /* float: left; */
 }
 
 .skill-item {
