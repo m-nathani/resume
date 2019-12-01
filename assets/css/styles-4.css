@@ -44,12 +44,15 @@ p {
 }
 .wrapper {
   background: #A15277;
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 80%;
+  border-top: 5px solid #A15277;
+  margin: auto;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: wrap;
 }
 .sidebar-wrapper {
   background: #A15277;
@@ -84,6 +87,7 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .profile {
+  width: 70%;
   margin-bottom: 15px;
   border-radius: 50%;
 }
@@ -146,6 +150,9 @@ p {
 }
 .sidebar-wrapper .interests-list {
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
 }
 .sidebar-wrapper .interests-list li {
   margin-bottom: 10px;
@@ -199,6 +206,8 @@ p {
   position: relative;
   overflow: hidden;
   margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
 }
 .main-wrapper .job-title {
   color: #3F4650;
@@ -206,6 +215,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
+  flex: auto;
 }
 .main-wrapper .time {
   position: absolute;
@@ -233,7 +243,7 @@ p {
   margin-bottom: 15px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-flow: wrap;
 }
 .skillset .level-title {
   font-size: 14px;
